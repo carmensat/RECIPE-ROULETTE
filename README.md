@@ -1,8 +1,9 @@
-# RECIPE-ROULETTE
+# RECIPE ROULETTE
 
 Created by Alessandra Bonilla, Maria López and Carmen Samedi, Recipe Roulette is a recipe maker. 
-To avoid having to think about recipes, to wvoid wasting food time and money, Recipe Roulette will help you. 
+To avoid having to think about recipes, to avoid wasting food, time and money, Recipe Roulette will help you. 
 By inputting the ingredients you have at hand, the app will output recipes and you can choose! 
+
 
 
 
