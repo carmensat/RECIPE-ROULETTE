@@ -5,9 +5,6 @@ To avoid having to think about recipes, to wvoid wasting food time and money, Re
 By inputting the ingredients you have at hand, the app will output recipes and you can choose! 
 
 
-# LOGO 
-LOGO/WELLWRITTENLOGO.png
-
 
 ![RECIPE ROULETTE](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/LOGO/WELLWRITTENLOGO.png?raw=true)
 
