@@ -6,6 +6,8 @@ By inputting the ingredients you have at hand, the app will output recipes and y
 
 
 # LOGO 
+LOGO/WELLWRITTENLOGO.png
+![alt text](https://github.com/[pageale]/[RECIPE-ROULETTE]LOGO/WELLWRITTENLOGO.png?raw=true)
 
 
 # MEMBERS INFORMATION
