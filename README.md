@@ -10,13 +10,16 @@ By inputting the ingredients you have at hand, the app will output recipes and y
 
 # MEMBERS INFORMATION
 **Alessandra Boninlla**
-NIA: 
+
+NIA: 107782
 [email] (alessandra.bonilla@alum.esci.upf.edu)
 
 **Maria López**
+
 NIA: 106995
 [email] (maria.lopez@alum.esci.upf.edu)
 
 **Carmen Samedi**
+
 NIA: 107652
 [email] (carmen.samedi@alum.esci.upf.edu)
