@@ -16,7 +16,7 @@ LOGO/WELLWRITTENLOGO.png
 **Alessandra Bonilla**
 
 NIA: 107782
-[email] (alessandra.bonilla@alum.esci.upf.edu)
+<alessandra.bonilla@alum.esci.upf.edu>
 
 **Maria López**
 
