@@ -14,7 +14,7 @@ LOGO/WELLWRITTENLOGO.png
 ![alt text](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/LOGO/WELLWRITTENLOGO.png?raw=true)
 
 
-# MEMBERS INFORMATION
+# CONTACT INFORMATION
 **Alessandra Bonilla**
 
 NIA: 107782
