@@ -9,7 +9,7 @@ By inputting the ingredients you have at hand, the app will output recipes and y
 
 
 # MEMBERS INFORMATION
-**Alessandra Boninlla**
+**Alessandra Bonilla**
 
 NIA: 107782
 [email] (alessandra.bonilla@alum.esci.upf.edu)
