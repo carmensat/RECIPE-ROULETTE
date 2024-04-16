@@ -9,9 +9,7 @@ By inputting the ingredients you have at hand, the app will output recipes and y
 LOGO/WELLWRITTENLOGO.png
 
 
-![alt text](https://github.com/carmensat/RECIPE-ROULETTE/LOGO/WELLWRITTENLOGO.png?raw=true)
-
-![alt text](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/LOGO/WELLWRITTENLOGO.png?raw=true)
+![RECIPE ROULETTE](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/LOGO/WELLWRITTENLOGO.png?raw=true)
 
 
 # CONTACT INFORMATION
