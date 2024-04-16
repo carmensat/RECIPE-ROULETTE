@@ -9,7 +9,7 @@ By inputting the ingredients you have at hand, the app will output recipes and y
 LOGO/WELLWRITTENLOGO.png
 
 
-![alt text](https://github.com/[carmensat]/[RECIPE-ROULETTE]/[LOGO]/WELLWRITTENLOGO.png?raw=true)
+![alt text](https://github.com/carmensat/RECIPE-ROULETTE/LOGO/WELLWRITTENLOGO.png?raw=true)
 
 
 # MEMBERS INFORMATION
@@ -28,4 +28,5 @@ NIA: 106995
 **Carmen Samedi**
 
 NIA: 107652
+
 <carmen.samedi@alum.esci.upf.edu>
