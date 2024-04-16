@@ -11,6 +11,8 @@ LOGO/WELLWRITTENLOGO.png
 
 ![alt text](https://github.com/carmensat/RECIPE-ROULETTE/LOGO/WELLWRITTENLOGO.png?raw=true)
 
+![alt text](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/LOGO/WELLWRITTENLOGO.png?raw=true)
+
 
 # MEMBERS INFORMATION
 **Alessandra Bonilla**
