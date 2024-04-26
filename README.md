@@ -1,6 +1,6 @@
 
 
-# RECIPE ROULETTE <img src="https://github.com/carmensat/RECIPE-ROULETTE/blob/main/IMAGE_RESOURCES/app_character.png?raw=true" width="100" height="100" />
+# RECIPE ROULETTE 
 
 ## TABLE OF CONTENTS 
 
@@ -21,6 +21,8 @@ By inputting the ingredients you have at hand, the app will output recipes and y
 
 In this repository you will have access to every single document we will create and use on our journey of developping our 
 little Recipe roulette baby. 
+
+
 
 ## APP FEATURES
 
