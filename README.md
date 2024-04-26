@@ -1,6 +1,6 @@
 
 
-# RECIPE ROULETTE <img align="right" width="200" height="200" src="https://github.com/carmensat/RECIPE-ROULETTE/blob/main/IMAGE_RESOURCES/app_character.png?raw=true" alt="RECIPE ROULETTE" width="100px" />
+# RECIPE ROULETTE <img align="right" width="100" height="100" src="https://github.com/carmensat/RECIPE-ROULETTE/blob/main/IMAGE_RESOURCES/app_character.png?raw=true" alt="RECIPE ROULETTE" width="100px" />
 
 ## TABLE OF CONTENTS 
 
