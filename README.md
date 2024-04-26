@@ -1,7 +1,7 @@
-
-<div style="float: right; margin-left: 10px;">
+<div style="float: left; margin-left: 20px;">
     <img src="https://github.com/carmensat/RECIPE-ROULETTE/blob/main/IMAGE_RESOURCES/WELLWRITTENLOGO.png?raw=true" alt="RECIPE ROULETTE" width="100px" />
 </div>
+
 # RECIPE ROULETTE
 
 Created by Alessandra Bonilla, Maria López and Carmen Samedi, Recipe Roulette is a recipe maker. 
