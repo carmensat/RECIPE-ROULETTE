@@ -16,7 +16,7 @@ little Recipe roulette baby.
 # CONTACT INFORMATION
 
 | PERSON | NIA | MAIL | ROLES |
-| ------ | --- | ---- | 
+| ------ | --- | ---- | ----- |
 | Alessandra Bonilla| 107782| <alessandra.bonilla@alum.esci.upf.edu> | Developer | 
 | María López | 106995 | <maria.lopez@alum.esci.upf.edu> | Scrum Master |
 | Carmen Samedi | 107652 | <carmen.samedi@alum.esci.upf.edu> | Developer |
