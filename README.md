@@ -5,8 +5,10 @@
 ## TABLE OF CONTENTS 
 
 1. [INTRODUCTION](#INTRODUCTION)
-2. [APP FEATURES](#APP FEATURES)
+2. [APP FEATURES](#APP-FEATURES)
 3. [CONTRIBUTORS](#CONTRIBUTORS)
+4. [CONTACT INFORMATION](###CONTACT-INFORMATION)
+5. [TRELLO](###TRELLO)
 
 ## INTRODUCTION
 <img align="right" width="200" height="200" src="https://github.com/carmensat/RECIPE-ROULETTE/blob/main/IMAGE_RESOURCES/WELLWRITTENLOGO.png?raw=true" alt="RECIPE ROULETTE" width="100px" />
@@ -32,6 +34,6 @@ little Recipe roulette baby.
 | María López | 106995 | <maria.lopez@alum.esci.upf.edu> | Scrum Master |
 | Carmen Samedi | 107652 | <carmen.samedi@alum.esci.upf.edu> | Developer |
 
-# TRELLO
+### TRELLO
   [TRELLO](https://trello.com/b/12HNlFAm/recipe-roulette)
   
