@@ -10,7 +10,7 @@ little Recipe roulette baby.
 
 
 
-![RECIPE ROULETTE](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/IMAGE RESOURCES/WELLWRITTENLOGO.png?raw=true)
+![RECIPE ROULETTE](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/IMAGE_RESOURCES/WELLWRITTENLOGO.png?raw=true)
 
 
 # CONTACT INFORMATION
