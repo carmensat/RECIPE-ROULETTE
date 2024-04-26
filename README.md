@@ -18,7 +18,7 @@ little Recipe roulette baby.
 
 NIA: 107782
 
-<alessandra.bonilla@alum.esci.upf.edu>
+
 
 **Maria López**
 
@@ -31,6 +31,9 @@ NIA: 106995
 NIA: 107652
 
 <carmen.samedi@alum.esci.upf.edu>
+| PERSON | NIA | MAIL | 
+| ------ | --- | ---- | 
+|Alessandra Bonilla| 107782| <alessandra.bonilla@alum.esci.upf.edu> |  
 
 
 # TRELLO
