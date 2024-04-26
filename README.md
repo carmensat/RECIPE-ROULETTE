@@ -4,6 +4,9 @@
 
 # RECIPE ROULETTE
 
+| Recipe Roulette                                   | ![RECIPE ROULETTE](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/IMAGE_RESOURCES/WELLWRITTENLOGO.png?raw=true) |
+|--------------------------------------------------|-----------------------------------------------------------------------------------|
+
 Created by Alessandra Bonilla, Maria López and Carmen Samedi, Recipe Roulette is a recipe maker. 
 
 To avoid having to think about recipes, to avoid wasting food, time and money, Recipe Roulette will help you. 
