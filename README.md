@@ -1,4 +1,14 @@
+
+
 # RECIPE ROULETTE
+
+## TABLE OF CONTENTS 
+
+1. [INTRODUCTION](#INTRODUCTION)
+2. [APP FEATURES](#APP FEATURES)
+3. [CONTRIBUTORS](#CONTRIBUTORS)
+
+## INTRODUCTION
 <img align="right" width="200" height="200" src="https://github.com/carmensat/RECIPE-ROULETTE/blob/main/IMAGE_RESOURCES/WELLWRITTENLOGO.png?raw=true" alt="RECIPE ROULETTE" width="100px" />
 
 Created by Alessandra Bonilla, Maria López and Carmen Samedi, Recipe Roulette is a recipe maker. 
@@ -9,8 +19,12 @@ By inputting the ingredients you have at hand, the app will output recipes and y
 In this repository you will have access to every single document we will create and use on our journey of developping our 
 little Recipe roulette baby. 
 
+## APP FEATURES
 
-# CONTACT INFORMATION
+
+## CONTRIBUTORS
+
+### CONTACT INFORMATION
 
 | PERSON | NIA | MAIL | ROLES |
 | ------ | --- | ---- | ----- |
