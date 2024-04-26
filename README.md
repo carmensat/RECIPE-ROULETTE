@@ -1,11 +1,9 @@
+# RECIPE ROULETTE
 <div style="float: left; margin-left: 20px;">
     <img src="https://github.com/carmensat/RECIPE-ROULETTE/blob/main/IMAGE_RESOURCES/WELLWRITTENLOGO.png?raw=true" alt="RECIPE ROULETTE" width="100px" />
 </div>
 
-# RECIPE ROULETTE
-
-| Recipe Roulette                                   | ![RECIPE ROULETTE](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/IMAGE_RESOURCES/WELLWRITTENLOGO.png?raw=true) |
-|--------------------------------------------------|-----------------------------------------------------------------------------------|
+<img align="right" width="100" height="100" src="https://github.com/carmensat/RECIPE-ROULETTE/blob/main/IMAGE_RESOURCES/WELLWRITTENLOGO.png?raw=true" alt="RECIPE ROULETTE" width="100px" />
 
 Created by Alessandra Bonilla, Maria López and Carmen Samedi, Recipe Roulette is a recipe maker. 
 
