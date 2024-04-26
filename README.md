@@ -9,9 +9,11 @@ In this repository you will have access to every single document we will create 
 little Recipe roulette baby. 
 
 
-
 ![RECIPE ROULETTE](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/IMAGE_RESOURCES/WELLWRITTENLOGO.png?raw=true)
 
+<div style="float: right; margin-left: 10px;">
+    <img src="https://github.com/carmensat/RECIPE-ROULETTE/blob/main/IMAGE_RESOURCES/WELLWRITTENLOGO.png?raw=true" alt="RECIPE ROULETTE" width="100px" />
+</div>
 
 # CONTACT INFORMATION
 
