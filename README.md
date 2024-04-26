@@ -14,27 +14,12 @@ little Recipe roulette baby.
 
 
 # CONTACT INFORMATION
-**Alessandra Bonilla**
 
-NIA: 107782
-
-
-
-**Maria López**
-
-NIA: 106995
-
-<maria.lopez@alum.esci.upf.edu>
-
-**Carmen Samedi**
-
-NIA: 107652
-
-<carmen.samedi@alum.esci.upf.edu>
 | PERSON | NIA | MAIL | 
 | ------ | --- | ---- | 
-|Alessandra Bonilla| 107782| <alessandra.bonilla@alum.esci.upf.edu> |  
-
+| Alessandra Bonilla| 107782| <alessandra.bonilla@alum.esci.upf.edu> |  
+| María López | 106995 | <maria.lopez@alum.esci.upf.edu> |
+| Carmen Samedi | 107652 | <carmen.samedi@alum.esci.upf.edu> |
 
 # TRELLO
   [TRELLO](https://trello.com/b/12HNlFAm/recipe-roulette)
