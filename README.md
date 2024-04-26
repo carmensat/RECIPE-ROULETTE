@@ -1,6 +1,6 @@
 
 
-# RECIPE ROULETTE ![RECIPE ROULETTE](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/IMAGE_RESOURCES/WELLWRITTENLOGO.png?raw=true)
+# RECIPE ROULETTE <img align="right" width="200" height="200" src="https://github.com/carmensat/RECIPE-ROULETTE/blob/main/IMAGE_RESOURCES/app_character.png?raw=true" alt="RECIPE ROULETTE" width="100px" />
 
 ## TABLE OF CONTENTS 
 
@@ -11,6 +11,7 @@
     2. [TRELLO](###TRELLO)
 
 ## INTRODUCTION
+
 <img align="right" width="200" height="200" src="https://github.com/carmensat/RECIPE-ROULETTE/blob/main/IMAGE_RESOURCES/WELLWRITTENLOGO.png?raw=true" alt="RECIPE ROULETTE" width="100px" />
 
 Created by Alessandra Bonilla, Maria López and Carmen Samedi, Recipe Roulette is a recipe maker. 
