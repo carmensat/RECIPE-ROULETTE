@@ -15,11 +15,11 @@ little Recipe roulette baby.
 
 # CONTACT INFORMATION
 
-| PERSON | NIA | MAIL | 
+| PERSON | NIA | MAIL | ROLES |
 | ------ | --- | ---- | 
-| Alessandra Bonilla| 107782| <alessandra.bonilla@alum.esci.upf.edu> |  
-| María López | 106995 | <maria.lopez@alum.esci.upf.edu> |
-| Carmen Samedi | 107652 | <carmen.samedi@alum.esci.upf.edu> |
+| Alessandra Bonilla| 107782| <alessandra.bonilla@alum.esci.upf.edu> | Developer | 
+| María López | 106995 | <maria.lopez@alum.esci.upf.edu> | Scrum Master |
+| Carmen Samedi | 107652 | <carmen.samedi@alum.esci.upf.edu> | Developer |
 
 # TRELLO
   [TRELLO](https://trello.com/b/12HNlFAm/recipe-roulette)
