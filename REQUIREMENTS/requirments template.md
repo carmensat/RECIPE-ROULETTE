@@ -3,8 +3,8 @@
 
 | ### ID: -- Unique identifier     | ### Type/Category: -- Type and Sub-type |
 | -------- | ------- |
-| January  | $250    |
-| February | $80     |
+| ### Version: -- Number  | $250    |
+| Title: -- Short name               |
 | March    | $420    |
 
  
