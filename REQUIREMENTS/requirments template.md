@@ -46,3 +46,4 @@ _Any additional information necessary to understand the requirement_
 
 --- 
 <p style="border: 1px solid red;"></p>
+<div style="background-color: yellow; height: 4px;"></div>
