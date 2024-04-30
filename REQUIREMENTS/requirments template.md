@@ -1,14 +1,6 @@
 # Requirements Template 
 
 
-| ### ID: -- Unique identifier     | ### Type/Category: -- Type and Sub-type |
-| -------- | ------- |
-| ### Version: -- Number  | $250    |
-| Title: -- Short name               |
-| March    | $420    |
-
- 
-
 ### ID: -- Unique identifier
 
 _Name using some short code_ 
@@ -53,3 +45,4 @@ _Any additional information necessary to understand the requirement_
  
 
 --- 
+<p style="border: 1px solid red;"></p>
