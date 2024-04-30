@@ -5,7 +5,7 @@
  
 ### Type/Category: -- Type and Sub-type
 
-### Version: -- v0.1
+### Version: v0.1
  
 ### Title: User registratio 
   
@@ -45,7 +45,7 @@ Some Role-Specific information are:
  
 ### Type/Category: -- Type and Sub-type
 
-### Version: -- v0.1
+### Version: v0.1
  
 ### Title: User Login/Authentication Version
   
@@ -68,7 +68,7 @@ There could be a security measure so as to prevent hacks by blocking accounts af
  
 ### Type/Category: -- Type and Sub-type
 
-### Version: -- v0.1
+### Version: v0.1
  
 ### Title: Delete Profile
   
@@ -87,5 +87,61 @@ How-to:
 ### Comments: 
 To avoid permanently deleting all the information and progress of a user in the app by accident, we would add a warning as well as remind the user of the consequences of deleting the app according. 
 
+
+ --- 
+
+### ID: CFR-1 
+ 
+### Type/Category: -- Type and Sub-type
+
+### Version: v0.1
+ 
+### Title: Approve recipe
+  
+### Description: 
+The Content Administrator reviews submitted recipes to ensure they meet the application's quality standards, guidelines, and policies. The approval process includes:
+
+* **Recipe content check:** Verify that the recipe contains complete and accurate information, including ingredients, preparation steps, difficulty and cooking time.
+* **Compliance with community guidelines:** Ensure the recipe does not contain inappropriate content, such as offensive language or topics unrelated with the app objectives.
+* **Quality assurance:** Check that the recipe is unique and does not duplicate existing content. Ensure it includes clear instructions and an appropriate level of detail for users to follow.
+* **Approval Process:** Once the Content Administrator confirms the recipe meets all requirements, they mark it as approved, allowing it to be published on the platform.
+* **Rejection and feedback:** If the recipe does not meet the guidelines, the Content Administrator provides feedback to the user, indicating the reasons for rejection and suggesting improvements.
+
+Possibles error that can happens
+* **Incomplete information:** The recipe may lack critical details, such as missing ingredients or unclear preparation steps.
+* **Violation of guidelines:** The recipe may contain content that violates community standards, leading to rejection.
+* **Duplicate recipe:** If the submitted recipe is too similar to an existing one, it may be rejected to avoid redundancy.
+* **Technical issues:** Problems with the content management system could prevent the approval process from completing, requiring troubleshooting or system maintenance
+
+### Relations: CFR-2,  UFR-1, UFR-7
+
+### Comments: 
+* The approval process should be efficient to minimize delays in publishing user-submitted recipes.
+* Content Administrators should have clear guidelines for recipe approval and consistent criteria for evaluating submissions
+
+
+ --- 
+
+ 
+### ID: CFR-2
+ 
+### Type/Category: -- Type and Sub-type
+
+### Version: v0.1
+ 
+### Title: Send Notification
+  
+### Description: 
+The Content Administrator sends a notification to the user when their uploaded recipe does not meet the app's guidelines, requesting modifications or suggesting corrections. This process involves:
+
+* **Generate notification:** A notification is created with specific feedback, explaining why the recipe was not approved and what needs to be corrected.
+* **Send notification:** The Content Administrator sends the notification to the user via the app's messaging system.
+
+### Relations: CFR-1, UFR-1, MFR-1,  CFR-3 
+
+### Comments: 
+* The notification should be clear and constructive, providing specific reasons for rejection and suggesting how to correct the issues.
+* A reasonable time frame should be given to the user to modify the recipe. If not addressed within this time, the recipe may be automatically deleted.
+* The Content Administrator should be able to track the status of notifications to ensure proper follow-up
 
  --- 
