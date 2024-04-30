@@ -40,3 +40,52 @@ Some Role-Specific information are:
 * Chef: The user provides details about their experience, qualifications, and availability. 
 
  --- 
+
+### ID: UFR-2
+ 
+### Type/Category: -- Type and Sub-type
+
+### Version: -- v0.1
+ 
+### Title: User Login/Authentication Version
+  
+### Description: 
+The user should be able to log in to the system using their credentials to get access to their account 
+
+Input:
+* Username or Email 
+* Password
+  
+### Relations: -- List of related Requirements
+
+### Comments: 
+If user fails to login after multiple attempts there could be two-factor authentication
+There could be a security measure so as to prevent hacks by blocking accounts after multiple failed login attempts.
+
+ --- 
+
+### ID: UFR-3
+ 
+### Type/Category: -- Type and Sub-type
+
+### Version: -- v0.1
+ 
+### Title: Delete Profile
+  
+### Description: 
+Allow users to delete their profile and all the data associated with it from the system.
+
+How-to:
+* Go into the settings 
+* Select delete profile 
+* Confirm decision twice to avoid mistakes 
+* System will delete it all after confirmation and all data will be removed 
+
+
+### Relations: -- List of related Requirements
+
+### Comments: 
+To avoid permanently deleting all the information and progress of a user in the app by accident, we would add a warning as well as remind the user of the consequences of deleting the app according. 
+
+
+ --- 
