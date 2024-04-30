@@ -1,6 +1,6 @@
 # Requirements Template 
 
-|### ID: -- Unique identifier      | ### Type/Category: -- Type and Sub-type   |
+| ### ID: -- Unique identifier     | ### Type/Category: -- Type and Sub-type   |
 |                                  |  _Type (mandatory) of the Requirement and the Sub-type (optional)_|
 | _Name using some short code_     | _(To be described further in the future)_  |
 | -------- | ------- |
