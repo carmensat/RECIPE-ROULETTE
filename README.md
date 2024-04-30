@@ -4,11 +4,11 @@
 
 ## TABLE OF CONTENTS 
 
-1. [INTRODUCTION](#INTRODUCTION)
-2. [APP FEATURES](#APP-FEATURES)
-3. [CONTRIBUTORS](#CONTRIBUTORS)
-    1. [CONTACT INFORMATION](###CONTACT-INFORMATION)
-    2. [TRELLO](###TRELLO)
+1. [Introduction](#INTRODUCTION)
+2. [App features](#APP-FEATURES)
+3. [Contributors](#CONTRIBUTORS)
+    1. [Contact information](###CONTACT-INFORMATION)
+    2. [Trello](###TRELLO)
 
 ## INTRODUCTION
 
@@ -26,6 +26,11 @@ little Recipe roulette baby.
 
 ## APP FEATURES
 
+* User registration
+* Search recipes by ingredients
+* Search reipes by dish name
+* Filter recipes
+* Upload recipes
 
 ## CONTRIBUTORS
 
