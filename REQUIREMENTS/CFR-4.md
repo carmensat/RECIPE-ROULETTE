@@ -15,7 +15,9 @@ The Content Administrator can revise or edit existing content in the app, typica
 * **Record changes:** A record of revisions should be maintained for auditing and transparency purposes, allowing for tracking of changes over time.
 * **Communicate changes:** If the revision affects users or has significant impact, the Content Administrator should communicate the changes to users, explaining the reasons and providing additional information.
 
-### Relations: CFR-2, CFR-3 , MFR-1, UFR-7
+### Relations:
+[CFR-2](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-2.md), [CFR-3](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-3.md), [UMFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/MFR-1.md), 
+[UFR-7](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-7.md).
 
 ### Comments: 
 Revisions should be handled carefully to ensure they do not negatively impact user experience or introduce new errors.
