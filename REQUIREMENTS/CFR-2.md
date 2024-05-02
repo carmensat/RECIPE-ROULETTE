@@ -12,7 +12,12 @@ The Content Administrator sends notifications to users for various purposes, inc
 * **Generate notification:** Creating notifications with specific feedback for rejected recipes, reward achievements, points expiration, engagements with the user, possible news and updates, etc
 * **Send notification:** The Content Administrator sends the notification to the user via the app's messaging system.
 
-### Relations: CFR-1, UFR-1, MFR-1, CFR-3, UFR-9 , UFR-8
+### Relations:
+[CFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-1.md),[UFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-1.md),[MFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/MFR-1.md),
+[CFR-3](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-3.md),
+[UFR-9](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-9.md),
+[UFR-8](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-8.md).
+
 
 ### Comments: 
 * The notification should be clear and constructive, providing specific reasons for rejection and suggesting how to correct the issues.
