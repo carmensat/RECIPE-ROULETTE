@@ -18,6 +18,7 @@ How-to:
 * System will delete it all after confirmation and all data will be removed
     
 ### Relations: 
+[UFR-2](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-2.md),[UFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-1.md).
 
 ### Comments: 
 To avoid permanently deleting all the information and progress of a user in the app by accident, we would add a warning as well as remind the user of the consequences of deleting the app according.
