@@ -21,7 +21,8 @@ Possibles error that can happens
 * **Duplicate recipe:** If the submitted recipe is too similar to an existing one, it may be rejected to avoid redundancy.
 * **Technical issues:** Problems with the content management system could prevent the approval process from completing, requiring troubleshooting or system maintenance
 
-### Relations: [CFR-2](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-2.md),[UFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-1.md),[UFR-7](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-7.md). 
+### Relations: 
+[CFR-2](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-2.md),[UFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-1.md),[UFR-7](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-7.md). 
 
 
 ### Comments: 
