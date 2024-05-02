@@ -16,7 +16,9 @@ Input:
 * DIfficulty level
 * Allergies (nuts, gluten…)
 
-### Relations: UFR-1 (parent), UFR-4, UFR-5
+### Relations:
+[UFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-1.md),[UFR-4](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-4.md),[UFR-5](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-5.md). 
+
 
 ### Comments:
 The user should be able to select from various different options.
