@@ -1,0 +1,26 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor "Guest User" as Guest
+actor "Registered User" as Registered
+actor "System Administrator" as Admin
+
+rectangle "Recipe Roulette System" {
+	usecase "Register Account" as UC1
+	usecase "Search Recipes" as UC2
+	usecase "Upload Recipe" as UC3
+	usecase "Manage Profile" as UC4
+	usecase "Administrate System" as UC5
+}
+
+Guest --> UC1 : initiates
+Registered --> UC2 : uses
+Registered --> UC3 : uses
+Registered --> UC4 : uses
+Admin --> UC5 : manages
+
+' Additional relationships can be added to reflect more detailed interactions or extended use cases
+UC1 .u.> UC2 : extends
+UC3 .u.> "Administrate System" : extends
+
+@enduml
