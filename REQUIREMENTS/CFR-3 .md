@@ -15,7 +15,10 @@ The Content Administrator has the ability to delete recipes from the app, typica
 * **Delete the Recipe:** Once the justification is confirmed, the recipe is deleted from the database. This removal is typically irreversible.
 * **Notify the User:** If the deletion is due to a guideline violation or user report, the Content Administrator sends a notification to the user explaining the reason for deletion.
 
-### Relations: CFR-1, CFR-2, MFR-1, UFR-7
+### Relations:
+[CFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-1.md), [CFR-2](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-2.md), [MFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/MFR-1.md), 
+[UFR-7](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-7.md).
+
 
 ### Comments: 
 * Deleting a recipe should be done with caution, ensuring that the reason for deletion is clear and justified.
