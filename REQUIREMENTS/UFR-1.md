@@ -26,6 +26,6 @@ If the person selects the role wrongly they can go back to select a different ro
 * A combination of uppercase letters, lowercase letters, numbers, and symbols.
 
 If the information is invalid the user will return to the registration page where they have to enter their personal information to correct any errors. Some Role-Specific information are:
-* Beginner: The user provides additional details about their current objective and dietary restrictions if any
-* Intermediate: The user should provide the difficulty they can work with and the dietary restrictions as well as the skills they want to work on.
-* Chef: The user provides details about their experience, qualifications, and availability
+* **Beginner:** The user provides additional details about their current objective and dietary restrictions if any
+* **Intermediate:** The user should provide the difficulty they can work with and the dietary restrictions as well as the skills they want to work on.
+* **Chef:** The user provides details about their experience, qualifications, and availability
