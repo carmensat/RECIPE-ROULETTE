@@ -14,7 +14,7 @@ Input:
 * Users should also upload the dietary restrictions it can or not follow 
 
 
-### Relations: 
+### Relations: UFR-1 (parent), UFR-8, CFR-1, CFR-2
 
 ### Comments: 
 The user should be able to delete a recipe if wanted, and to avoid problems it would need confirmation. 
