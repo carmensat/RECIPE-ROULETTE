@@ -14,7 +14,9 @@ Users can earn points by engaging in specific activities within the app. These p
 * **Participation in the Community:** Points are awarded for active participation, such as commenting or liking. .
 * **Referrals:** Users can gain points by referring friends who sign up and use the app.
 
-### Relations: UFR-9, UFR-7, UFR-4, UFR-5, UFR-6, MFR-1 
+### Relations:
+[UFR-9](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-9.md), [UFR-7](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-7.md), [UFR-4](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-4.md), [UFR-5](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-5.md),[UFR-6](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-6.md), [MFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/MFR-1.md). 
+
 
 ### Comments: 
 * The point system should be transparent, allowing users to understand how they earn points and what they can be redeemed for.
