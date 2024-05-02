@@ -15,7 +15,9 @@ Users can check their current point balance and view available rewards. This fea
 * **Redeem Points:** A method to redeem points for a chosen reward, with clear instructions on how to complete the process.
 * **Point History:** A detailed history of point transactions, including points earned, redeemed, or expired.
 
-### Relations: UFR-8, UFR-7, MFR-1 , CFR-2
+### Relations:
+[UFR-8](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-8.md),[UFR-7](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-7.md),[MFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/MFR-1.md) [CFR-2](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-2.md),. 
+
 
 ### Comments:
 
