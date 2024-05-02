@@ -14,7 +14,10 @@ Input:
 * Users should also upload the dietary restrictions it can or not follow 
 
 
-### Relations: UFR-1 (parent), UFR-8, CFR-1, CFR-2
+### Relations:
+[UFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-1.md), [UFR-8](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-8.md),[UFR-8](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-7.md), [CFR-2](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-2.md). 
+
+
 
 ### Comments: 
 The user should be able to delete a recipe if wanted, and to avoid problems it would need confirmation. 
