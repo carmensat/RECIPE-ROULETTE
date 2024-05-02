@@ -22,7 +22,7 @@ Possibles error that can happens
 * **Technical issues:** Problems with the content management system could prevent the approval process from completing, requiring troubleshooting or system maintenance
 
 ### Relations: CFR-2,  UFR-1, UFR-7
-
+[CFR-2](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-2.md)
 ### Comments: 
 * The approval process should be efficient to minimize delays in publishing user-submitted recipes.
 * Content Administrators should have clear guidelines for recipe approval and consistent criteria for evaluating submissions
