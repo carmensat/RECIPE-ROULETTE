@@ -2,7 +2,7 @@
  
 ### Type/Category: -- Type and Sub-type
 
-### Version: v0.1
+### Version: v1.0
  
 ### Title: Performance
   
@@ -10,8 +10,10 @@
 Ensure the system performs efficiently under expected and peak load conditions.
 Details:
 
-* Response Time: The system should respond within 2 seconds for 95% of requests.
-* Load Handling: Capable of handling up to 100,000 users simultaneously without significant performance degradation.
+* **Response time:** The app should respond to user requests (e.g., searching for recipes, uploading recipes) within 2 seconds.
+* **Load times:** The app's main screens (e.g., recipe search, user profile) should load in under 5 seconds.
++ **Concurrent users:** The app should support a large number of users concurrently without significant performance degradation. Aim for at least 5,000 to 10,000 concurrent users.
+* **Data processing:** The app should handle large datasets (e.g., thousands of recipes) efficiently and without performance issues
 
 ### Relations: 
 
