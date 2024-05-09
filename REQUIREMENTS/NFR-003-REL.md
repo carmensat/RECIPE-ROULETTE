@@ -9,8 +9,8 @@
 ### Description: 
  he system must be reliable, with minimal downtime and errors.
 
-* Uptime: The system should have an uptime of at least 99.95%.
-* Error Rate: System errors should not exceed 0.1% of all transactions.
+* **Uptime:** The system should have an uptime of at least 99.95%.
+* **Error Rate:** System errors should not exceed 0.1% of all transactions.
 
 
 ### Relations: 
