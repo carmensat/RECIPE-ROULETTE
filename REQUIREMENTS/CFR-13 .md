@@ -1,4 +1,4 @@
-### ID: CFR-3
+### ID: CFR-13
  
 ### Type/Category: -- Type and Sub-type
 
@@ -16,7 +16,7 @@ The Content Administrator has the ability to delete recipes from the app, typica
 * **Notify the User:** If the deletion is due to a guideline violation or user report, the Content Administrator sends a notification to the user explaining the reason for deletion.
 
 ### Relations:
-[CFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-1.md), [CFR-2](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-2.md), [MFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/MFR-1.md), 
+[CFR-11](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-11.md), [CFR-12](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-102.md), [MFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/MFR-10.md), 
 [UFR-7](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-7.md).
 
 
