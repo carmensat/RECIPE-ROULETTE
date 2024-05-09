@@ -16,7 +16,7 @@ Users can check their current point balance and view available rewards. This fea
 * **Point History:** A detailed history of point transactions, including points earned, redeemed, or expired.
 
 ### Relations:
-[UFR-8](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-8.md),[UFR-7](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-7.md),[MFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/MFR-1.md) [CFR-2](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-2.md),. 
+[UFR-8](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-8.md),[UFR-7](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-7.md),[MFR-10](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/MFR-10.md) [CFR-12](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-12.md),. 
 
 
 ### Comments:
