@@ -4,6 +4,7 @@ skinparam packageStyle rectangle
 actor "Guest User" as Guest
 actor "Registered User" as Registered
 actor "System Administrator" as Admin
+actor "Content Administrator" as Cont
 
 rectangle "Recipe Roulette System" {
 	usecase "Register Account" as UC1
@@ -21,6 +22,6 @@ Admin --> UC5 : manages
 
 ' Additional relationships can be added to reflect more detailed interactions or extended use cases
 UC1 .u.> UC2 : extends
-UC3 .u.> "Administrate System" : extends
+UC3 .u.> Cont : extends
 
 @enduml
