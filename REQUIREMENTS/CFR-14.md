@@ -16,7 +16,7 @@ The Content Administrator can revise or edit existing content in the app, typica
 * **Communicate changes:** If the revision affects users or has significant impact, the Content Administrator should communicate the changes to users, explaining the reasons and providing additional information.
 
 ### Relations:
-[CFR-2](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-2.md), [CFR-3](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-3.md), [UMFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/MFR-1.md), 
+[CFR-12](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-12.md), [CFR-13](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-13.md), [UMFR-10](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/MFR-10.md), 
 [UFR-7](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-7.md).
 
 ### Comments: 
