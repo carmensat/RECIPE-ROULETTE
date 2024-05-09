@@ -1,4 +1,4 @@
- ### ID: CFR-2
+ ### ID: CFR-12
  
 ### Type/Category: -- Type and Sub-type
 
@@ -13,8 +13,8 @@ The Content Administrator sends notifications to users for various purposes, inc
 * **Send notification:** The Content Administrator sends the notification to the user via the app's messaging system.
 
 ### Relations:
-[CFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-1.md),[UFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-1.md),[MFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/MFR-1.md),
-[CFR-3](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-3.md),
+[CFR-11](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-11.md),[UFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-1.md),[MFR-10](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/MFR-10.md),
+[CFR-13](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-13.md),
 [UFR-9](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-9.md),
 [UFR-8](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-8.md).
 
