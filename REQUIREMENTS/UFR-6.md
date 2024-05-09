@@ -2,7 +2,7 @@
 
 ### Type/Category: 
 
-### Version: v0.1
+### Version: v1.0
 
 ### Title: Filter Recipes
 
