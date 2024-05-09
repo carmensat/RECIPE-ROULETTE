@@ -1,4 +1,4 @@
-### ID: CFR-1 
+### ID: CFR-11
  
 ### Type/Category: -- Type and Sub-type
 
@@ -22,7 +22,7 @@ Possibles error that can happens
 * **Technical issues:** Problems with the content management system could prevent the approval process from completing, requiring troubleshooting or system maintenance
 
 ### Relations: 
-[CFR-2](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-2.md),[UFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-1.md),[UFR-7](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-7.md). 
+[CFR-12](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/CFR-12.md),[UFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-1.md),[UFR-7](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-7.md). 
 
 
 ### Comments: 
