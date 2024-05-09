@@ -15,7 +15,7 @@ Users can earn points by engaging in specific activities within the app. These p
 * **Referrals:** Users can gain points by referring friends who sign up and use the app.
 
 ### Relations:
-[UFR-9](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-9.md), [UFR-7](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-7.md), [UFR-4](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-4.md), [UFR-5](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-5.md),[UFR-6](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-6.md), [MFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/MFR-1.md). 
+[UFR-9](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-9.md), [UFR-7](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-7.md), [UFR-4](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-4.md), [UFR-5](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-5.md),[UFR-6](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-6.md), [MFR-10](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/MFR-10.md). 
 
 
 ### Comments: 
