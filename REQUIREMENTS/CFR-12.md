@@ -2,7 +2,7 @@
  
 ### Type/Category: -- Type and Sub-type
 
-### Version: v0.1
+### Version: v1.0
  
 ### Title: Send Notification
   
