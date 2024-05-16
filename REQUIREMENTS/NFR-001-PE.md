@@ -1,19 +1,13 @@
 ### ID: NFR-001-PE
  
-### Type/Category: -- Type and Sub-type
+### Type/Category: Security
 
 ### Version: v1.0
  
-### Title: Performance
+### Title: Data encryption 
   
 ### Description: 
-Ensure the system performs efficiently under expected and peak load conditions.
-Details:
-
-* **Response time:** The app should respond to user requests (e.g., searching for recipes, uploading recipes) within 2 seconds.
-* **Load times:** The app's main screens (e.g., recipe search, user profile) should load in under 5 seconds.
-+ **Concurrent users:** The app should support a large number of users concurrently without significant performance degradation. Aim for at least 5,000 to 10,000 concurrent users.
-* **Data processing:** The app should handle large datasets (e.g., thousands of recipes) efficiently and without performance issues
+All sensitive user data, including passwords, personal information, and recipe details, should be encrypted both during transit and at rest to prevent unauthorized access or data breaches.
 
 ### Relations: 
 
@@ -21,4 +15,4 @@ Details:
 [NFR-003-REL](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/NFR-003-REL.md).
 
 ### Comments: 
-Load testing should be conducted to ensure compliance with these performance metrics
+Utilize industry-standard encryption algorithms (e.g., AES) and protocols (e.g., TLS) to ensure the confidentiality and integrity of user data. Implement secure storage mechanisms and key management practices to protect encryption keys from unauthorized access. Regularly audit and update encryption protocols to address emerging security threats and vulnerabilities.
