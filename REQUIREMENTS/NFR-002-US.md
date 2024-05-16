@@ -1,10 +1,10 @@
 ### ID: NFR-002-US
  
-### Type/Category: -- Type and Sub-type
+### Type/Category: Performance Optimization
 
-### Version: v1.0
+### Version: v1.1
  
-### Title: Usability
+### Title: Fast response time 
   
 ### Description: 
 The system should be user-friendly and intuitive for all user classes.
