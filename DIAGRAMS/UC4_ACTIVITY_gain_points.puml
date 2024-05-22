@@ -1,0 +1,14 @@
+@startuml
+title UC4: Gain Points
+
+|User|
+start
+:Engage in app activities;
+|Recipe Roulette System|
+:Track user interactions;
+:Attribute points accordingly;
+:Update user's point balance;
+:Adjust user's profile status;
+:Check reward status;
+stop
+@enduml
