@@ -1,0 +1,39 @@
+@startuml
+actor User as US
+boundary Registration_Page as RP
+control Registration_Controller as RC
+database Database as UD
+
+US -> RP : Select "Register" option
+Activate US
+Activate RP
+RP -> US : Display registration form
+US -> RP : Enter required information (name, email, password)
+RP -> RC : Submit registration details
+Activate RC
+RC -> RC : Validate information
+
+alt Information valid
+    RC -> UD : Create new user account
+    Activate UD
+    UD --> RC : Confirm account creation
+    RC -> RP : Confirm account creation
+    Deactivate UD
+    RP -> US : Prompt user to log in
+else Email already in use
+    RC -> RP : Prompt to try a different email
+    RP -> US : Display email error message
+    RP -> US : Return to registration form
+else Incomplete information
+    RC -> RP : Display error, request complete details
+    RP -> US : Display incomplete information message
+    RP -> US : Return to registration form
+else Other validation errors
+    RC -> RP : Handle other validation errors
+    Deactivate RC
+    RP -> US : Display validation error message
+    RP -> US : Return to registration form
+Deactivate RP
+Deactivate US
+end
+@enduml
