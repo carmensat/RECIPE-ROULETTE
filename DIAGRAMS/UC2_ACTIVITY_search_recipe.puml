@@ -1,0 +1,68 @@
+@startuml
+title UC2: Search Recipes - Activity Diagram
+
+|User|
+start
+
+:Sign in to their account;
+
+|System|
+:Display main app page;
+
+|User|
+:Go to the 'search' page;
+
+|System|
+:Display search page;
+
+|User|
+:Select the search bar;
+
+if (search by?) then (Dish Name)
+  |User|
+  :Search by exact name or titles that include it;
+  
+else (Ingredient)
+ :Type the ingredient;
+  |System|
+  if (ingredient exists in database?) then (yes)
+   |User|
+    :Click button of same or similar ingredient;
+    
+  else (no)
+  |System|
+  :Keep entire word to find matches;
+  note
+    The system will search for exact matches 
+    in the ingredients of its database
+  end note
+  
+  endif
+endif
+
+|User|
+:Click 'submit' button;
+
+|System|
+:Search in recipe database;
+:Display search results;
+
+
+if (want more personalized search?) then (yes)
+  :Display filter menu;
+  note
+    Users can filter recipes based on → Time required, 
+    Food type, Dietary restrictions, Difficulty level or Allergies.
+    Users can decide if they want to add filters or not
+  end note
+  |User|
+  :Click on the desired filters;
+  |System|
+  :Apply filters;
+  :Display filtered results;
+else (no)
+endif
+
+stop
+
+@enduml
