@@ -1,0 +1,32 @@
+@startuml
+title UC1: Register Account
+
+|User|
+start
+:Select "Register" option;
+
+|System|
+:Display registration form;
+repeat
+:Enter required information
+(User name, Email, Password);
+
+:Validate information;
+if (Information valid?) then (yes)
+	:Create new user account;
+	:Confirm account creation;
+	:Prompt user to log in;
+	stop
+else (no)
+	if (Email already in use?) then (yes)
+    	:Prompt to try a different email;
+	else (no)
+    	if (Incomplete information?) then (yes)
+        	:Display error, request complete details;
+    	else (no)
+        	:Handle other validation errors;
+    	endif
+	endif
+endif
+repeat while (Return to registration form)
+@enduml
