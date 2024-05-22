@@ -1,0 +1,27 @@
+@startuml
+actor User as US
+boundary Recipe_Roulette_System as RR
+control Point_Controller as PC
+database Database as DB
+
+US -> RR: Engage in app activities
+Activate US
+Activate RR
+RR -> PC: Track user interactions
+Activate PC
+PC -> PC: Attribute points accordingly
+PC -> DB: Update user's point balance
+Activate DB
+DB -> PC: Confirm point update
+Deactivate DB
+PC -> PC: Adjust user's profile status
+PC -> RR: Check reward status
+RR -> DB: Retrieve user's reward status
+Activate DB
+DB --> RR: User's reward status
+Deactivate DB
+RR -> US: Display user's reward status
+Deactivate RR
+Deactivate US
+Deactivate PC
+@enduml
