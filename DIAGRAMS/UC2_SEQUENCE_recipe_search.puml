@@ -1,0 +1,86 @@
+@startuml
+title: UC2- Search Recipe
+
+actor "User" as user
+
+box "App" #LightYellow
+  participant "User Interface (UI)" as ui
+  participant "Recipe Roulette system" as a
+end box
+
+database RecipeDatabase as RB
+
+
+user -> ui: Sign in user account
+activate ui
+a --> ui: Display main page
+activate ui
+deactivate ui
+
+user -> ui: Click in search page
+
+activate ui
+a --> ui: Display search menu
+activate a
+a --> user: Shows search menu
+
+group MakeSearch
+user -> ui: Select search bar
+a --> ui: Display two options: Dish and ingredients
+user -> ui: Choose one search option
+activate ui
+
+  group SearchByIngredient
+  a --> ui: Display frequent search ingredients
+  user -> ui: Type ingredients
+  ui -> a: Recognize entries
+  activate a
+  a --> ui: Display buttoms with entry matches
+  deactivate a
+  user -> ui: Click ingredients displayed options
+  ui -> a: Keep entry to search in databse
+  user -> ui: Click 'submit' buttom
+  ui -> RB: Search ingredients in recipes
+  activate RB
+  RB --> ui: Display results
+  deactivate RB
+  user -> ui: Click wanted recipe
+  
+  end group
+
+
+  group SearchByDishName
+    user -> ui: Type Dish Name
+    ui -> a: Recognize entries
+    activate a
+    a --> ui: Display buttoms with entry matches
+    deactivate a
+    user -> ui: Click options displayed options
+    ui -> a: Keep entry to search in databse
+    user -> ui: Click 'submit' buttom
+    ui -> RB: Search ingredients in recipes
+    activate RB
+    RB --> ui: Display results
+    deactivate RB
+    user -> ui: Click wanted recipe
+  end group
+deactivate ui
+
+end group
+
+group FilteResults
+  user -> ui: Select 'filters' options
+  activate ui
+  a --> ui: Display filter menu
+  user -> ui: Select desired filters
+  ui -> a: Apply filtering to the results
+  a --> ui: Display filtered results
+  deactivate ui
+  user -> ui: Click wanted recipe
+  
+end group
+  
+deactivate a
+deactivate ui
+deactivate ui
+@enduml
