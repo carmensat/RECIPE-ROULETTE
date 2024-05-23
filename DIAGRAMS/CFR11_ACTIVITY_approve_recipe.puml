@@ -2,25 +2,29 @@
 title Approval Process for Recipes
 
 start
-:Content Administrator logs in;
-
 :Access recipe submission queue;
 repeat :Review next recipe;
-  fork
-	:Check completeness;
-	:Verify compliance with guidelines;
-	:Assess content uniqueness;
-  end fork
+
+:Check completeness;
+if (Recipe found in database?) then (yes)
+  :Verify compliance with guidelines;
+  :Assess content uniqueness;
+
   if (Recipe meets all criteria) then (yes)
-	:Approve recipe;
-	:Schedule for publication;
+    :Approve recipe;
+    :Schedule for publication;
   else (no)
-	if (Can be improved?) then (yes)
-  	:Request revision from user;
-	else (no)
-  	:Reject recipe;
-	endif
+    if (Can be improved?) then (yes)
+      :Request revision from user;
+    else (no)
+      :Reject recipe;
+    endif
   endif
+else (no)
+  :Error: Recipe not found;
+  stop
+endif
+
 repeat while (More recipes?)
 stop
 @enduml
