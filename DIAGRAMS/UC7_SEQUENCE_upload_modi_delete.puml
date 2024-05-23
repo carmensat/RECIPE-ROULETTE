@@ -1,0 +1,63 @@
+@startuml
+title: UC7 - Upload, Modify, Delete Recipes
+
+actor "User" as user
+
+box "App" #LightYellow
+  participant "User Interface (UI)" as ui
+  participant "Recipe Management Controller" as rmc
+end box
+
+database "Recipe Database" as RB
+participant "Content Administrator" as ca
+
+user -> ui: Sign in to account
+activate ui
+ui -> rmc: Display main page
+deactivate ui
+
+user -> ui: Go to 'recipe management' page
+activate ui
+ui -> rmc: Display recipe management page
+deactivate ui
+
+user -> ui: Select upload, modify, or delete recipe
+activate ui
+
+alt Upload
+  user -> ui: Enter recipe details
+  user -> ui: Specify dietary restrictions
+  user -> ui: Click 'submit' button
+  ui -> rmc: Save recipe
+  rmc -> RB: Store recipe
+  RB --> rmc: Confirmation
+  deactivate RB
+  rmc -> ca: Send for approval
+  ca -> rmc: Approve or request changes
+else Modify
+  user -> ui: Select recipe to modify
+  user -> ui: Update recipe details
+  user -> ui: Click 'submit' button
+  ui -> rmc: Save updated recipe
+  rmc -> RB: Update recipe
+  RB --> rmc: Confirmation
+  deactivate RB
+  rmc -> ca: Send for re-approval
+  ca -> rmc: Approve or request changes
+else Delete
+  user -> ui: Select recipe to delete
+  ui -> rmc: Prompt for confirmation
+  user -> ui: Confirm deletion
+  alt User confirms
+	ui -> rmc: Delete recipe
+	rmc -> RB: Remove recipe
+	RB --> rmc: Confirmation
+	deactivate RB
+  else User cancels
+	ui -> user: Action cancelled
+  end
+end
+ui -> user: Display action result
+deactivate ui
+
+@enduml

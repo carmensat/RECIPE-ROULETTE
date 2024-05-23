@@ -1,0 +1,43 @@
+@startuml
+title Recipe Approval Sequence
+
+actor "Content Administrator" as CA
+participant "Admin Interface" as AI
+database "Recipe Database" as DB
+participant "Notification System" as NS
+
+CA -> AI: Log in
+activate AI
+
+AI -> DB: Retrieve unapproved recipes
+DB --> AI: List of recipes
+deactivate AI
+
+loop Each Recipe
+  CA -> AI: Select recipe
+  activate AI
+  AI -> DB: Fetch recipe details
+  DB --> AI: Recipe data
+  deactivate AI
+  
+  CA -> AI: Review recipe
+  activate AI
+  
+  alt All criteria met
+    AI -> DB: Approve recipe
+    DB --> AI: Confirmation
+    AI -> NS: Send approval notification
+    NS --> CA: Confirmation message
+  else Criteria not met
+    alt Improvements possible
+      AI -> NS: Request revision
+      NS --> CA: Revision requested
+    else Immediate rejection
+      AI -> NS: Send rejection notification
+      NS --> CA: Rejection message
+    end
+  end
+  deactivate AI
+end
+
+@enduml

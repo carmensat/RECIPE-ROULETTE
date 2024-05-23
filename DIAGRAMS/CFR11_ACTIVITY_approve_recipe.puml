@@ -1,0 +1,26 @@
+@startuml
+title Approval Process for Recipes
+
+start
+:Content Administrator logs in;
+
+:Access recipe submission queue;
+repeat :Review next recipe;
+  fork
+	:Check completeness;
+	:Verify compliance with guidelines;
+	:Assess content uniqueness;
+  end fork
+  if (Recipe meets all criteria) then (yes)
+	:Approve recipe;
+	:Schedule for publication;
+  else (no)
+	if (Can be improved?) then (yes)
+  	:Request revision from user;
+	else (no)
+  	:Reject recipe;
+	endif
+  endif
+repeat while (More recipes?)
+stop
+@enduml
