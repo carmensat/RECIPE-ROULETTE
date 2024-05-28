@@ -1,27 +1,48 @@
 @startuml
 left to right direction
 skinparam packageStyle rectangle
-actor "Guest User" as Guest
+
+actor "Guest User (Unregistered)" as Guest
 actor "Registered User" as Registered
 actor "System Administrator" as Admin
 actor "Content Administrator" as Cont
 
 rectangle "Recipe Roulette System" {
-	usecase "Register Account" as UC1
-	usecase "Search Recipes" as UC2
-	usecase "Upload Recipe" as UC3
-	usecase "Manage Profile" as UC4
-	usecase "Administrate System" as UC5
+	usecase "User registration" as UC1
+	usecase "User Login/Authentication" as UC2
+	usecase "Delete Profile" as UC3
+	usecase "Search Recipes (Ingredients/Recipe)" as UC4
+	usecase "Filter Recipes" as UC6
+        usecase "Recipe Management" as UC7
+	usecase "Gain Points" as UC8
+	usecase "Check Reward Status " as UC9
+	usecase "Software Management" as UC10
+	usecase "Approve recipe" as UC11
+	usecase "Send Notification " as UC12
+	usecase "Delete recipe" as UC13
+	usecase "Revise Content" as UC14
+
 }
 
-Guest --> UC1 : initiates
-Registered --> UC2 : uses
-Registered --> UC3 : uses
-Registered --> UC4 : uses
-Admin --> UC5 : manages
 
-' Additional relationships can be added to reflect more detailed interactions or extended use cases
-UC1 .u.> UC2 : extends
-UC3 .u.> Cont : extends
+Guest -- UC1
+Registered <|- Guest
 
+Registered -- UC4
+Registered -- UC2
+Registered -- UC3
+Registered -- UC7
+Registered -- UC8
+
+Admin -- UC10
+
+Cont -- UC11
+Cont -- UC12
+Cont -- UC13
+Cont -- UC14
+
+UC6 .u.> UC4 : extends
+UC9 .u.> UC8 : extends
+UC7 .u.> UC11 : include
+UC8 .u.> UC7 : extends
 @enduml
