@@ -1,0 +1,178 @@
+@startuml
+skinparam classAttributeIconSize 0
+Title: Recipe Roulette Class Diagram
+
+
+package "App" {
+
+    class Main {
+        - UserInterface UI
+        - ServerProxy serverProxy
+        +Main()
+        +initialize()
+        +shutdown()
+        +startApplication()
+        +handleUserInput()
+        +loadData()
+        +saveData()
+    }
+
+    class UserInterface {
+        -String currentPage
+        -RegisteredUser currentUser
+        -HashMap<String, UserInput> userInputFields
+        -HashMap<String, Component> components
+        + renderHomeScreen()
+        + renderLoginScreen()
+        + renderUserProfile()
+        + renderSearchPage()
+        + renderRecipeSearchResults(recipes: Recipe[])
+        + updateUserInfo()
+        + showRecipeDetails(recipe: Recipe)
+        + showFilteredRecipes(filter: Filter)
+        + handleErrorMessages()
+    }
+
+    class ServerProxy {
+        - APIProxy apiProxy
+        - LocalDatabase localDatabase
+        + sendRequest(request: Request)
+        + receiveResponse(response: Response)
+        + initialize()
+        + shutdown()
+        + syncDataWithServer()
+        + handleServerError()
+    }
+
+    class APIProxy {
+        + fetchRecipes(filter: Filter)
+        + submitRecipe(recipe: Recipe)
+        + updateRecipe(recipe: Recipe)
+    }
+
+    class LocalDatabase {
+        + addRecipe(recipe: Recipe)
+        + deleteRecipe(recipeID: int)
+        + searchRecipe(query: String)
+    }
+
+
+    Main "1" *-- "1" UserInterface
+    Main "1" *-- "1" ServerProxy
+    ServerProxy "1" *-- "1" APIProxy
+    ServerProxy "1" *-- "1" LocalDatabase
+}
+
+package "Server" {
+    class Main {
+        -String serverName
+        -User[] users
+        -RecipeDatabase database
+        +initializeServer()
+        +loadUsers()
+        +loadDatabases()
+    }
+
+    class User {
+        +userID: int
+        +username: String
+        +email: String
+        +password: String
+        +login()
+        +deleteProfile()
+    }
+
+    class RegisteredUser {
+        +points: int
+        +searchRecipes()
+        +uploadRecipe()
+        +modifyRecipe()
+        +saveRecipe()
+        +removeRecipe()
+        +filterRecipes(filter: Filter)
+        +checkRewardStatus()
+    }
+
+    class GuestUser {
+        +register()
+    }
+
+    class Recipe {
+        +recipeID: int
+        +name: String
+        +ingredients: String
+        +instructions: String
+        +difficultyLevel: String
+        +typeOfFood: String
+       +timeRequired: int
+        +foodType: String
+        +dietaryRestrictions: String[]
+        +allergies: String[]
+    }
+
+
+    class LocalDatabase {
+        +addRecipe(recipe: Recipe)
+        +deleteRecipe(recipeID: int)
+        +searchRecipe(query: String)
+    }
+
+    class ContentAdmin {
+        +userID: int
+        +username: String
+        +email: String
+        +password: String
+        +login()
+        +deleteProfile()
+        +approveRecipe(recipe: Recipe)
+        +requestModification(recipeID: int)
+    }
+
+    class APIProxy {
+        +fetchRecipes(filter: Filter)
+        +submitRecipe(recipe: Recipe)
+        +updateRecipe(recipe: Recipe)
+    }
+
+    class InAppMessage {
+        +messageID: int
+        +senderID: int
+        +receiverID: int
+        +content: String
+        +sendMessage()
+    }
+
+    class ServerProxy {
+        +sendRequest(request: Request)
+        +receiveResponse(response: Response)
+    }
+
+    class RecipeDatabase {
+        -String databaseName
+        -String databaseUrl
+        +ConnectToDatabase()
+        +RetrieveData()
+        +StoreData()
+        +UpdateData()
+        +DeleteData()
+    }
+
+
+
+    Main "1" -- "0..*" User : manages
+    Main "1" -- "0..*" ContentAdmin
+    Main "1" -- "1" RecipeDatabase : owns
+    User <|-- RegisteredUser
+    User <|-- GuestUser
+    RegisteredUser "1" -- "*" Recipe : owns >
+    Recipe "1" -right- "0..*" ContentAdmin : reviewed by >
+    LocalDatabase "1" -- "0..*" RegisteredUser : stores >
+    InAppMessage "1" -- "1" ContentAdmin : sends >
+    InAppMessage "1" -- "1" RegisteredUser : receives >
+    ServerProxy <-- RegisteredUser
+    ServerProxy --> APIProxy
+    APIProxy --> RecipeDatabase
+}
+
+
+@enduml
