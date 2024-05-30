@@ -14,7 +14,7 @@ Users can filter recipes based on → Time required, Food type (e.g., Indian, Me
 [NF-3](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/NF-3.md)
 [NF-4](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/NF-4.md),
 [NF-5](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/NF-5.md)
-[NF-7](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/NF-7.md),
+[NF-7](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/NF-7.md), and
 [MFR-12](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/MFR-12.md)
 
 
