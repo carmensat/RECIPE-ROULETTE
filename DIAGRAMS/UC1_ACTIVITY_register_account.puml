@@ -1,11 +1,9 @@
 @startuml
 title UC1: Register Account
 
-|User|
 start
 :Select "Register" option;
 
-|System|
 :Display registration form;
 repeat
 :Enter required information
@@ -15,7 +13,10 @@ repeat
 if (Information valid?) then (yes)
 	:Create new user account;
 	:Confirm account creation;
-	:Prompt user to log in;
+        note
+        User receives a verification email
+        end note
+ 	:Prompt user to log in;
 	stop
 else (no)
 	if (Email already in use?) then (yes)
