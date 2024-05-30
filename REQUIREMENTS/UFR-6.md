@@ -1,23 +1,21 @@
 ### ID: UFR-6
 
-### Type/Category: 
-
-### Version: v1.0
+### Version: v2.0
 
 ### Title: Filter Recipes
 
 ### Description: 
-Allows users to filter recipes based on various criteria to refine search results.
-
-Input:
-* Time required for the recipe
-* Type of food (Indian, Mediterranean…)
-* Dietary restriction (vegetarian, vegan…)
-* DIfficulty level
-* Allergies (nuts, gluten…)
+Users can filter recipes based on → Time required, Food type (e.g., Indian, Mediterranean) ,Dietary restrictions (e.g., vegetarian, vegan), Difficulty level or Allergies (e.g., nuts, gluten)
 
 ### Relations:
-[UFR-1](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-1.md),[UFR-4](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-4.md),[UFR-5](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-5.md). 
+[UFR-4](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-4.md),
+[UFR-5](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-5.md), 
+[UFR-7](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/UFR-7.md), and
+[NF-3](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/NF-3.md)
+[NF-4](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/NF-4.md),
+[NF-5](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/NF-5.md)
+[NF-7](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/NF-7.md),
+[MFR-12](https://github.com/carmensat/RECIPE-ROULETTE/blob/main/REQUIREMENTS/MFR-12.md)
 
 
 ### Comments:
