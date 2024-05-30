@@ -6,8 +6,8 @@
 
 ### Description: 
 Users can upload, modify, and delete recipes on the platform. They input:
-**Recipe Upload:** Users upload recipes and key ingredients for easy searchability.
-**Dietary Restrictions:** Users specify dietary restrictions the recipe can or cannot follow.
+* **Recipe Upload:** Users upload recipes and key ingredients for easy searchability.
+* **Dietary Restrictions:** Users specify dietary restrictions the recipe can or cannot follow.
 
 
 ### Relations:
