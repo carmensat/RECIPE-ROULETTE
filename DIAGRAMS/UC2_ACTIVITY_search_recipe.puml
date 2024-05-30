@@ -4,32 +4,41 @@ title UC2: Search Recipes - Activity Diagram
 start
 
 :Input user query;
+:Choose search type;
 
-if (search by?) then (Dish Name)
-  :Search by exact name or titles that include it;
-  :Click 'submit' button;
-  :Search in recipe database by dish name;
-else (Ingredient)
-  :Type the ingredient;
-  :Click 'submit' button;
-  if (ingredient exists in database?) then (yes)
-    :Search in recipe database by ingredient;
-  else (no)
-    :Display error: Ingredient not found;
-    stop
-  endif
-endif
+partition "Query Type Selection" {
+	if (search by?) then (Dish Name)
+    	:Type the dish name;
+    	while (name exists in database?) is (no)
+        	:Display error: Dish name not found;
+        	:Type the dish name;
+    	endwhile
+    	:Search in recipe database by dish name;
+	else (Ingredient)
+    	:Type the ingredient;
+    	while (ingredient exists in database?) is (no)
+        	:Display error: Ingredient not found;
+        	:Type the ingredient;
+    	endwhile
+    	:Search in recipe database by ingredient;
+	endif
+}
 
-:Display search results;
-
-if (want more personalized search?) then (yes)
-  :Display filter menu;
-  :Click on the desired filters;
-  :Apply filters;
-  :Display filtered results;
-else (no)
-endif
+partition "Search Results Display" {
+	:Display search results;
+	if (want more specific search?) then (yes)
+    	:Display filter options;
+    	note
+    	Possible options: Cooking time, difficulty, diet, etc.
+    	end note
+    	:Select and apply filters;
+    	:Display filtered results;
+	else (no)
+    	stop
+	endif
+}
 
 stop
 
 @enduml
+
