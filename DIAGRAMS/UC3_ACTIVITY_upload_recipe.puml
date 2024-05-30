@@ -1,0 +1,25 @@
+@startuml
+title UC3: Upload Recipe - Activity Diagram
+
+start
+:Access 'Upload Recipe' section;
+:Enter recipe details (Name, Ingredients, Instructions);
+
+if (Information complete?) then (yes)
+    :Validate recipe data;
+    if (Data valid?) then (yes)
+        :Add recipe to database;
+        :Display success message;
+        stop
+    else (no)
+        :Display validation error;
+        :Prompt for correct data;
+        ->[back] Enter recipe details;
+    endif
+else (no)
+    :Display error for incomplete information;
+    :Request complete details;
+    ->[back] Enter recipe details;
+endif
+
+@enduml
