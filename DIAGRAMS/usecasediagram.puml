@@ -8,41 +8,47 @@ actor "System Administrator" as Admin
 actor "Content Administrator" as Cont
 
 rectangle "Recipe Roulette System" {
-	usecase "User registration" as UC1
-	usecase "User Login/Authentication" as UC2
-	usecase "Delete Profile" as UC3
-	usecase "Search Recipes (Ingredients/Recipe)" as UC4
-	usecase "Filter Recipes" as UC6
-        usecase "Recipe Management" as UC7
-	usecase "Gain Points" as UC8
-	usecase "Check Reward Status " as UC9
-	usecase "Software Management" as UC10
-	usecase "Approve recipe" as UC11
-	usecase "Send Notification " as UC12
-	usecase "Delete recipe" as UC13
-	usecase "Revise Content" as UC14
-
+    usecase "Register Account" as UC1
+    usecase "Search Recipes" as UC2
+    usecase "Recipe Management" as UC3
+    usecase "Gain Points with Recipe Interactions" as UC4
+    usecase "Add Recipe to Local Database" as UC5
+    usecase "Delete Recipe from Local Database" as UC6
+    usecase "Search In Local Database" as UC7
+    usecase "Recipe Approval" as UC8
+    usecase "Filter Recipe" as UC9
+    usecase "User Verification Management" as UC10
+    usecase "Software Management" as UC11
+    usecase "In-App Messages" as UC12
+    usecase "Check Reward Status" as UC13
+    usecase "User LogIn" as UC14
+    usecase "Delete Profile" as UC15
+    usecase "Delete Recipes" as UC16
 }
 
-
-Guest -- UC1
 Registered <|- Guest
-
-Registered -- UC4
+Guest -- UC1
+Registered -- UC14
 Registered -- UC2
 Registered -- UC3
+Registered -- UC4
+Registered -- UC5
+Registered -- UC6
 Registered -- UC7
-Registered -- UC8
+Registered -- UC9
+Registered -- UC13
+Registered -- UC15
 
+Admin -- UC11
 Admin -- UC10
 
-Cont -- UC11
-Cont -- UC12
-Cont -- UC13
-Cont -- UC14
+Cont -- UC8
+Cont -- UC16
 
-UC6 .u.> UC4 : extends
-UC9 .u.> UC8 : extends
-UC7 .u.> UC11 : include
-UC8 .u.> UC7 : extends
+UC9 .u.> UC2 : extends
+UC4 .u.> UC3 : extends
+UC7 .u.> UC5 : include
+UC3 .u.> UC8 : include
+UC13 .u.> UC4 : extends
+UC1 .u.> UC10 : include
 @enduml
