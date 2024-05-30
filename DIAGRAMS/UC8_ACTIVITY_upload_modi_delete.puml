@@ -1,57 +1,35 @@
 @startuml
-title UC7: Upload, Modify, Delete Recipes - Activity Diagram
+title UC8: Upload, Modify, Delete Recipes - Activity Diagram
 
-|User|
 start
 :Sign in to their account;
-
-|System|
 :Display main app page;
-
-|User|
 :Go to the 'recipe management' page;
-
-|System|
 :Display recipe management page;
-
-|User|
 :Select to upload, modify, or delete a recipe;
 
 if (action?) then (Upload)
-  |User|
   :Enter recipe details;
   :Specify dietary restrictions;
   :Click 'submit' button;
- 
-  |System|
   :Save recipe;
   :Send for approval;
- 
 elseif (Modify)
-  |User|
   :Select a recipe to modify;
   :Update recipe details;
   :Click 'submit' button;
- 
-  |System|
   :Save updated recipe;
   :Send for re-approval;
- 
 else (Delete)
-  |User|
   :Select a recipe to delete;
- 
-  |System|
   :Prompt for confirmation;
   if (User confirms?) then (yes)
-	:Delete recipe;
+    :Delete recipe;
   else (no)
-	:Action cancelled;
+    :Action cancelled;
   endif
 endif
 
-|System|
 :Display action result;
-
 stop
 @enduml
