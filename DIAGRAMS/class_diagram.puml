@@ -1,13 +1,12 @@
 @startuml
 skinparam classAttributeIconSize 0
-Title: Recipe Roulette Class Diagram
-
+Title: Recipe Roulette Enhanced Class Diagram
 
 package "App" {
-
     class Main {
         - UserInterface UI
         - ServerProxy serverProxy
+        - NotificationManager notificationManager
         +Main()
         +initialize()
         +shutdown()
@@ -22,43 +21,48 @@ package "App" {
         -RegisteredUser currentUser
         -HashMap<String, UserInput> userInputFields
         -HashMap<String, Component> components
-        + renderHomeScreen()
-        + renderLoginScreen()
-        + renderUserProfile()
-        + renderSearchPage()
-        + renderRecipeSearchResults(recipes: Recipe[])
-        + updateUserInfo()
-        + showRecipeDetails(recipe: Recipe)
-        + showFilteredRecipes(filter: Filter)
-        + handleErrorMessages()
+        +renderHomeScreen()
+        +renderLoginScreen()
+        +renderUserProfile()
+        +renderSearchPage()
+        +renderRecipeSearchResults(recipes: Recipe[])
+        +updateUserInfo()
+        +showRecipeDetails(recipe: Recipe)
+        +showFilteredRecipes(filter: Filter)
+        +handleErrorMessages()
     }
 
     class ServerProxy {
-        - APIProxy apiProxy
-        - LocalDatabase localDatabase
-        + sendRequest(request: Request)
-        + receiveResponse(response: Response)
-        + initialize()
-        + shutdown()
-        + syncDataWithServer()
-        + handleServerError()
+        -APIProxy apiProxy
+        -LocalDatabase localDatabase
+        +sendRequest(request: Request)
+        +receiveResponse(response: Response)
+        +initialize()
+        +shutdown()
+        +syncDataWithServer()
+        +handleServerError()
+    }
+
+    class NotificationManager {
+        +sendNotification(notification: Notification)
+        +scheduleNotification(notification: Notification, dateTime: DateTime)
     }
 
     class APIProxy {
-        + fetchRecipes(filter: Filter)
-        + submitRecipe(recipe: Recipe)
-        + updateRecipe(recipe: Recipe)
+        +fetchRecipes(filter: Filter)
+        +submitRecipe(recipe: Recipe)
+        +updateRecipe(recipe: Recipe)
     }
 
     class LocalDatabase {
-        + addRecipe(recipe: Recipe)
-        + deleteRecipe(recipeID: int)
-        + searchRecipe(query: String)
+        +addRecipe(recipe: Recipe)
+        +deleteRecipe(recipeID: int)
+        +searchRecipe(query: String)
     }
-
 
     Main "1" *-- "1" UserInterface
     Main "1" *-- "1" ServerProxy
+    Main "1" *-- "1" NotificationManager
     ServerProxy "1" *-- "1" APIProxy
     ServerProxy "1" *-- "1" LocalDatabase
 }
@@ -97,26 +101,6 @@ package "Server" {
         +register()
     }
 
-    class Recipe {
-        +recipeID: int
-        +name: String
-        +ingredients: String
-        +instructions: String
-        +difficultyLevel: String
-        +typeOfFood: String
-       +timeRequired: int
-        +foodType: String
-        +dietaryRestrictions: String[]
-        +allergies: String[]
-    }
-
-
-    class LocalDatabase {
-        +addRecipe(recipe: Recipe)
-        +deleteRecipe(recipeID: int)
-        +searchRecipe(query: String)
-    }
-
     class ContentAdmin {
         +userID: int
         +username: String
@@ -128,23 +112,17 @@ package "Server" {
         +requestModification(recipeID: int)
     }
 
-    class APIProxy {
-        +fetchRecipes(filter: Filter)
-        +submitRecipe(recipe: Recipe)
-        +updateRecipe(recipe: Recipe)
-    }
-
-    class InAppMessage {
-        +messageID: int
-        +senderID: int
-        +receiverID: int
-        +content: String
-        +sendMessage()
-    }
-
-    class ServerProxy {
-        +sendRequest(request: Request)
-        +receiveResponse(response: Response)
+    class Recipe {
+        +recipeID: int
+        +name: String
+        +ingredients: String
+        +instructions: String
+        +difficultyLevel: String
+        +typeOfFood: String
+        +timeRequired: int
+        +foodType: String
+        +dietaryRestrictions: String[]
+        +allergies: String[]
     }
 
     class RecipeDatabase {
@@ -157,22 +135,13 @@ package "Server" {
         +DeleteData()
     }
 
-
-
     Main "1" -- "0..*" User : manages
     Main "1" -- "0..*" ContentAdmin
     Main "1" -- "1" RecipeDatabase : owns
     User <|-- RegisteredUser
     User <|-- GuestUser
-    RegisteredUser "1" -- "*" Recipe : owns >
-    Recipe "1" -right- "0..*" ContentAdmin : reviewed by >
-    LocalDatabase "1" -- "0..*" RegisteredUser : stores >
-    InAppMessage "1" -- "1" ContentAdmin : sends >
-    InAppMessage "1" -- "1" RegisteredUser : receives >
-    ServerProxy <-- RegisteredUser
-    ServerProxy --> APIProxy
-    APIProxy --> RecipeDatabase
+    RegisteredUser "1" -- "*" Recipe : owns
+    Recipe "1" -- "0..*" ContentAdmin : reviewed by
 }
-
 
 @enduml
