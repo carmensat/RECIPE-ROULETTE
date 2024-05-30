@@ -1,86 +1,54 @@
-@startuml
-title: UC2- Search Recipe
+ @startuml
+title UC2: Search Recipes
 
-actor "User" as user
+actor "User Interface" as UI
+entity "Interface Manager" as IM
+control "Webserver Controller" as WC
+database "Remote Recipe Database" as DB
 
-box "App" #LightYellow
-  participant "User Interface (UI)" as ui
-  participant "Recipe Roulette system" as a
-end box
+== Query Type Selection ==
+UI -> IM : Receive query input
+IM -> WC : Determine search type
 
-database RecipeDatabase as RB
+alt Search by Dish Name
+	IM -> WC : Initiate search by dish name
+	WC -> DB : Query dish name
+	alt name found
+    	DB --> WC : Return dish results
+    	WC -> IM : Process dish results
+    	IM -> UI : Display dish results
+	else name not found
+    	WC -> IM : Dish name not found
+    	IM -> UI : Display error: Dish name not found
+    	UI -> IM : Prompt re-entry of dish name
+	end
+else Search by Ingredient
+	IM -> WC : Initiate search by ingredient
+	WC -> DB : Query ingredient
+	alt ingredient found
+    	DB --> WC : Return ingredient results
+    	WC -> IM : Process ingredient results
+    	IM -> UI : Display ingredient results
+	else ingredient not found
+    	WC -> IM : Ingredient not found
+    	IM -> UI : Display error: Ingredient not found
+    	UI -> IM : Prompt re-entry of ingredient
+	end
+end
 
+== Search Results Display ==
+IM -> UI : Show initial search results
+UI -> IM : Request for more specific search options
+alt Yes
+	IM -> UI : Offer filter options
+	UI -> IM : User selects filters
+	IM -> WC : Apply selected filters
+	WC -> DB : Filter results based on selection
+	DB --> WC : Return filtered results
+	WC -> IM : Process filtered results
+	IM -> UI : Display filtered results
+else No
+	IM -> UI : End search interaction
+end
 
-user -> ui: Sign in user account
-activate ui
-a --> ui: Display main page
-activate ui
-deactivate ui
-
-user -> ui: Click in search page
-
-activate ui
-a --> ui: Display search menu
-activate a
-a --> user: Shows search menu
-
-group MakeSearch
-user -> ui: Select search bar
-a --> ui: Display two options: Dish and ingredients
-user -> ui: Choose one search option
-activate ui
-
-  group SearchByIngredient
-  a --> ui: Display frequent search ingredients
-  user -> ui: Type ingredients
-  ui -> a: Recognize entries
-  activate a
-  a --> ui: Display buttoms with entry matches
-  deactivate a
-  user -> ui: Click ingredients displayed options
-  ui -> a: Keep entry to search in databse
-  user -> ui: Click 'submit' buttom
-  ui -> RB: Search ingredients in recipes
-  activate RB
-  RB --> ui: Display results
-  deactivate RB
-  user -> ui: Click wanted recipe
-  
-  end group
-
-
-  group SearchByDishName
-    user -> ui: Type Dish Name
-    ui -> a: Recognize entries
-    activate a
-    a --> ui: Display buttoms with entry matches
-    deactivate a
-    user -> ui: Click options displayed options
-    ui -> a: Keep entry to search in databse
-    user -> ui: Click 'submit' buttom
-    ui -> RB: Search ingredients in recipes
-    activate RB
-    RB --> ui: Display results
-    deactivate RB
-    user -> ui: Click wanted recipe
-  end group
-deactivate ui
-
-end group
-
-group FilteResults
-  user -> ui: Select 'filters' options
-  activate ui
-  a --> ui: Display filter menu
-  user -> ui: Select desired filters
-  ui -> a: Apply filtering to the results
-  a --> ui: Display filtered results
-  deactivate ui
-  user -> ui: Click wanted recipe
-  
-end group
-  
-deactivate a
-deactivate ui
-deactivate ui
 @enduml
