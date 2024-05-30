@@ -1,0 +1,27 @@
+@startuml
+title UC3: Upload Recipe - Sequence Diagram
+
+actor "User Interface" as UI
+participant "Input Validation" as Validator
+participant "Server" as Server
+database "Database" as DB
+
+== Recipe Upload Process ==
+UI -> Validator: Input details (Name, Ingredients, Instructions)
+Validator -> Validator: Check completeness
+alt All Information Complete
+    Validator -> Server: Send validated data
+    Server -> DB: Request to add recipe
+    DB -> Server: Confirm addition
+    Server -> UI: Display success message
+else Information Incomplete
+    Validator -> UI: Display error (Incomplete info)
+    UI -> UI: Prompt user to fill all fields
+    UI -> Validator: Re-input details
+else Data Invalid
+    Validator -> UI: Display error (Invalid data)
+    UI -> UI: Prompt user to correct data
+    UI -> Validator: Re-input corrected details
+end
+
+@enduml
