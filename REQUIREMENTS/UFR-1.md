@@ -1,6 +1,6 @@
 ### ID: UFR-1
 
-### Version: v2.0
+### Version: v2.1
  
 ### Title: User registration
   
