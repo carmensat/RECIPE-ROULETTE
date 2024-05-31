@@ -2,7 +2,7 @@
  
 ### Type/Subtype: Security
 
-### Version: v2.0
+### Version: v2.1
  
 ### Title: Data encryption 
   
