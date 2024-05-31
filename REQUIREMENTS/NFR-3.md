@@ -2,7 +2,7 @@
  
 ### Type/Category: Maintainability
 
-### Version: v2.0
+### Version: v2.1
  
 ### Title: Easy Code Maintainability
   
