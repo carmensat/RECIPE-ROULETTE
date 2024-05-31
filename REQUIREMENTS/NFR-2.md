@@ -2,7 +2,7 @@
  
 ### Type/Category: Performance Optimization
 
-### Version: v2.0
+### Version: v2.1
  
 ### Title: Fast response time 
   
