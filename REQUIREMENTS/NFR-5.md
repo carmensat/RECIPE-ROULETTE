@@ -2,7 +2,7 @@
  
 ### Type/Subtype: Usability
 
-### Version: v2.0
+### Version: v2.1
  
 ### Title: Intuitive Interface
   
