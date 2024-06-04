@@ -86,7 +86,7 @@ package "Server" {
         +modifyRecipe()
         +saveRecipe()
         +removeRecipe()
-        +filterRecipes(filter: Filter)
+        +filterRecipes()
         +checkRewardStatus()
         +receiveNotif()
     }
