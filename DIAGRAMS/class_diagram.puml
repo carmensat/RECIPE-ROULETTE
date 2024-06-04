@@ -88,6 +88,7 @@ package "Server" {
         +removeRecipe()
         +filterRecipes(filter: Filter)
         +checkRewardStatus()
+        +receiveNotif()
     }
 
     class Recipe {
@@ -101,9 +102,10 @@ package "Server" {
         +foodType: String
         +dietaryRestrictions: String[]
         +allergies: String[]
-        +updateDetails(newDetails: Recipe)
-        +approveRecipe()
-        +requestModification()
+        +updateDetails()
+        +requestApprovalRecipe()
+        +deleteRecipe()
+        +createRecipe()
     }
 
     class ContentAdmin {
@@ -114,10 +116,12 @@ package "Server" {
         +login()
         +deleteProfile()
         +approveRecipe(recipe: Recipe)
+        +rejectRecipe(recipe: Recipe)
+        +sendNotif()
         +requestModification(recipeID: int)
     }
 
-    class InAppMessage {
+    class Notifications {
         +messageID: int
         +senderID: int
         +receiverID: int
@@ -144,11 +148,11 @@ package "Server" {
 
     MainServer "1" -- "0..*" User : "manages"
     MainServer "1" -- "0..*" ContentAdmin : "manages"
-    User "1" -- "*" Recipe : "owns"
+    User "1" -- "0..*" Recipe : "owns"
     Recipe "1" -right- "0..*" ContentAdmin : "reviewed by"
     Recipe "1" -- "1" RecipeDatabase : "persisted in"
-    InAppMessage "1" -- "1" ContentAdmin : "sends"
-    InAppMessage "1" -- "1" User : "receives"
+    Notifications "0..*" -- "1" ContentAdmin : "sends"
+    Notifications "0..*" -- "1" User : "receives"
     MainServer "1" *-- "1" RecipeDatabase : "uses"
     ServerProxy "1" *-- "1" NetworkService : "communicates with"
     NetworkService "1" *-- "1" MainServer : "connects to"
