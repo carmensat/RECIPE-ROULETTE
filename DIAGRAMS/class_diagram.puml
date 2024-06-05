@@ -45,16 +45,25 @@ package "App" {
     }
 
 
-    class LocalDatabase {
-        + addRecipe(recipe: Recipe)
-        + deleteRecipe(recipeID: int)
-        + searchRecipe(query: String)
-    }
-
-    class NotificationManager {
-        + sendNotification(notification: Notification)
-        + scheduleNotification(notification: Notification, dateTime: DateTime)
-    }
+class LocalDatabase {
+        -String databaseName
+        -String databaseUrl
+    + addRecipe(recipe: Recipe)
+    + modifyRecipe(recipe: Recipe)
+    + deleteRecipe(recipeID: int)
+    + searchRecipe(query: String): List<Recipe>
+    + connectToDatabase()
+    + disconnectDatabase()
+    + retrieveRecipeByID(recipeID: int): Recipe
+}
+class NotificationManager {
+    - List<Notification> notifications
+    + sendNotification(notification: Notification)
+    + scheduleNotification(notification: Notification, dateTime: DateTime)
+    + getPendingNotifications(): List<Notification>
+    + removeNotification(notificationID: int)
+    + markNotificationAsRead(notificationID: int)
+}
 
     Main "1" *-- "1" UserInterface : "has"
     Main "1" *-- "1" ServerProxy : "uses"
@@ -73,40 +82,43 @@ package "Server" {
         +loadDatabases()
     }
 
-    class User {
-        +userID: int
-        +username: String
-        +email: String
-        +password: String
-        +points: int
-        +login()
-        +deleteProfile()
-        +searchRecipes()
-        +uploadRecipe()
-        +modifyRecipe()
-        +saveRecipe()
-        +removeRecipe()
-        +filterRecipes()
-        +checkRewardStatus()
-        +receiveNotif()
-    }
 
-    class Recipe {
-        +recipeID: int
-        +name: String
-        +ingredients: String
-        +instructions: String
-        +difficultyLevel: String
-        +typeOfFood: String
-        +timeRequired: int
-        +foodType: String
-        +dietaryRestrictions: String[]
-        +allergies: String[]
-        +updateDetails()
-        +requestApprovalRecipe()
-        +deleteRecipe()
-        +createRecipe()
-    }
+class User {
+    +userID: int
+    +username: String
+    +email: String
+    +password: String
+    +points: int
+    +login(username: String, password: String)
+    +deleteProfile(userID: int)
+    +searchRecipes(query: String): List<Recipe>
+    +uploadRecipe(recipe: Recipe)
+    +modifyRecipe(recipeID: int, updatedRecipe: Recipe)
+    +saveRecipe(recipeID: int)
+    +removeRecipe(recipeID: int)
+    +filterRecipes(filter: Filter): List<Recipe>
+    +checkRewardStatus(): int
+    +receiveNotif(notification: Notification)
+}
+
+class Recipe {
+    +recipeID: int
+    +name: String
+    +ingredients: String
+    +instructions: String
+    +difficultyLevel: String
+    +typeOfFood: String
+    +timeRequired: int
+    +foodType: String
+    +dietaryRestrictions: String[]
+    +allergies: String[]
+    +updateDetails(name: String, ingredients: String, instructions: String, difficultyLevel: 
+String, typeOfFood: String, timeRequired: int, foodType: String, dietaryRestrictions: String[], allergies: String[])
+    +requestApprovalRecipe()
+    +deleteRecipe()
+    +createRecipe(name: String, ingredients: String, instructions: String, difficultyLevel:
+ String, typeOfFood: String, timeRequired: int, foodType: String, dietaryRestrictions: String[], allergies: String[])
+}
 
     class ContentAdmin {
         +userID: int
@@ -129,22 +141,27 @@ package "Server" {
         +sendMessage()
     }
 
-    class RecipeDatabase {
-        -String databaseName
-        -String databaseUrl
-        +ConnectToDatabase()
-        +RetrieveData()
-        +StoreData()
-        +UpdateData()
-        +DeleteData()
-    }
 
-    class NetworkService {
-        +connect()
-        +disconnect()
-        +sendData(data: String)
-        +receiveData(): String
-    }
+class RecipeDatabase {
+    -String databaseName
+    -String databaseUrl
+    +ConnectToDatabase()
+    +RetrieveData(): List<Recipe>
+    +StoreData(recipe: Recipe)
+    +UpdateData(recipe: Recipe)
+    +DeleteData(recipeID: int)
+    +searchRecipes(filter: Filter): List<Recipe>
+}
+
+class NetworkService {
+    - String serverUrl
+    - boolean isConnected
+    + connect(serverUrl: String): boolean
+    + disconnect(): boolean
+    + sendData(data: String): boolean
+    + receiveData(): String
+    + isConnected(): boolean
+}
 
     MainServer "1" -- "0..*" User : "manages"
     MainServer "1" -- "0..*" ContentAdmin : "manages"
